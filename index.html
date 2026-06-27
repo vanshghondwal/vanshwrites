@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vansh — LinkedIn Ghostwriting for Founders</title>
+<title>LinkedIn Ghostwriter | Vansh Ghondwal</title>
+<meta name="description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding. Start with a free 1-week trial — no contracts, no risk.">
+<meta name="keywords" content="LinkedIn ghostwriter, personal branding, founder content, LinkedIn strategy, thought leadership">
+<meta name="author" content="Vansh Ghondwal">
+<meta property="og:title" content="LinkedIn Ghostwriter | Vansh Ghondwal">
+<meta property="og:description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LinkedIn Ghostwriter | Vansh Ghondwal">
+<meta name="twitter:description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,6 +36,20 @@
     --text: #e8e8e8;
   }
   html { scroll-behavior: smooth; }
+
+  /* ─── Scroll Progress Bar ─── */
+  #scroll-progress {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 2px; z-index: 10001;
+    background: transparent;
+    transform-origin: left;
+  }
+  #scroll-progress-bar {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--blue), var(--blue-light), #60b3ff);
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(10,102,194,0.6);
+  }
   body {
     background: var(--black);
     color: var(--text);
@@ -316,6 +339,45 @@
   .hero-stat-num span { color: var(--blue); }
   .hero-stat-label { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
 
+  /* Hero Checks */
+  .hero-checks {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 10px 24px; margin-bottom: 32px;
+  }
+  .hero-check {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.88rem; color: var(--gray); font-weight: 500;
+  }
+  .hc-tick {
+    color: var(--blue); font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
+  }
+
+  /* Hero Trust */
+  .hero-trust { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .hero-stars {
+    color: #f59e0b; font-size: 1rem; letter-spacing: 2px; margin-bottom: 12px;
+  }
+  .hero-trust-pills {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .trust-pill {
+    font-size: 0.72rem; color: var(--gray);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 100px; padding: 4px 12px;
+    white-space: nowrap;
+  }
+
+  /* Sample Badge on Hero Cards */
+  .sample-badge-hero {
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
+    color: var(--blue-light); text-transform: uppercase;
+    background: rgba(10,102,194,0.12);
+    border: 1px solid rgba(10,102,194,0.25);
+    border-radius: 4px; padding: 2px 7px;
+    display: inline-block; margin-bottom: 10px;
+  }
+
   /* ─── Hero Visual ─── */
   .hero-visual {
     position: relative;
@@ -521,6 +583,30 @@
   }
   .tp-check svg { width: 10px; height: 10px; fill: var(--blue); }
 
+  /* Trial pillars */
+  .trial-pillars {
+    display: flex; gap: 32px; justify-content: center;
+    margin-bottom: 28px; flex-wrap: wrap;
+  }
+  .trial-pillar {
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+  }
+  .trial-pillar-icon { font-size: 1.6rem; }
+  .trial-pillar-text {
+    font-size: 0.88rem; font-weight: 600; color: var(--white);
+  }
+
+  /* Sample Post label on portfolio cards */
+  .sample-post-label {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4); text-transform: uppercase;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px; padding: 2px 8px;
+    margin-bottom: 10px; display: block;
+  }
+
   /* ─── SERVICES ─── */
   #services { background: var(--surface); }
   .services-grid {
@@ -581,6 +667,55 @@
   .sfc-left { flex: 1; }
   .sfc-right {
     display: flex; gap: 32px; flex-wrap: wrap;
+  }
+
+  /* ─── BEFORE / AFTER ─── */
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 24px; align-items: center;
+  }
+  .ba-card {
+    border-radius: 16px; padding: 28px;
+    border: 1px solid var(--border);
+    background: var(--card);
+  }
+  .ba-before { border-color: rgba(239,68,68,0.2); background: rgba(239,68,68,0.04); }
+  .ba-after { border-color: rgba(10,102,194,0.3); background: rgba(10,102,194,0.06); }
+  .ba-label {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; margin-bottom: 16px;
+    display: inline-block; border-radius: 4px; padding: 3px 10px;
+  }
+  .ba-label-before { color: #f87171; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); }
+  .ba-label-after { color: var(--blue-light); background: rgba(10,102,194,0.12); border: 1px solid rgba(10,102,194,0.25); }
+  .ba-text { font-size: 0.88rem; color: var(--gray); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+  .ba-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ba-tag {
+    font-size: 0.68rem; font-weight: 600;
+    background: rgba(239,68,68,0.1); color: #f87171;
+    border-radius: 100px; padding: 3px 10px;
+  }
+  .ba-tag-after { background: rgba(10,102,194,0.12); color: var(--blue-light); }
+  .ba-arrow {
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    min-width: 60px;
+  }
+  .ba-arrow-line {
+    width: 2px; height: 60px;
+    background: linear-gradient(to bottom, rgba(239,68,68,0.4), var(--blue));
+    position: relative;
+  }
+  .ba-arrow-line::after {
+    content: '→'; position: absolute; bottom: -20px; left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    color: var(--blue); font-size: 1rem;
+  }
+  .ba-arrow-label {
+    font-size: 0.65rem; font-weight: 700; color: var(--blue);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    writing-mode: vertical-rl; text-orientation: mixed;
+    margin-top: 24px;
   }
 
   /* ─── WHY WORK WITH ME ─── */
@@ -873,6 +1008,21 @@
   .footer-copy { font-size: 0.8rem; color: var(--gray2); }
   .footer-made { font-size: 0.8rem; color: var(--gray2); }
 
+  /* Footer meta */
+  .footer-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .footer-meta-item { display: flex; flex-direction: column; gap: 1px; }
+  .footer-meta-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray2); }
+  .footer-meta-val { font-size: 0.82rem; color: var(--gray); font-weight: 500; }
+
+  /* Footer disclaimer */
+  .footer-disclaimer {
+    border-top: 1px solid var(--border);
+    padding: 16px 0;
+    font-size: 0.72rem; color: var(--gray2);
+    text-align: center; line-height: 1.5;
+    font-style: italic;
+  }
+
   /* ─── Responsive ─── */
 
   /* Tablet - 1024px */
@@ -919,8 +1069,21 @@
     .about-text { font-size: 0.93rem; }
     .about-goal { font-size: 0.9rem; }
 
-    /* Trial */
-    #trial { padding: 70px 0; }
+    /* Hero checks */
+    .hero-checks { grid-template-columns: 1fr; gap: 8px; margin-bottom: 24px; }
+    .hero-trust { margin-top: 24px; }
+    .hero-trust-pills { gap: 6px; }
+    .trust-pill { font-size: 0.68rem; }
+
+    /* Before/After */
+    .ba-grid { grid-template-columns: 1fr; gap: 16px; }
+    .ba-arrow { flex-direction: row; min-width: auto; }
+    .ba-arrow-line { width: 40px; height: 2px; background: linear-gradient(to right, rgba(239,68,68,0.4), var(--blue)); }
+    .ba-arrow-line::after { content: '→'; bottom: auto; left: auto; right: -14px; top: 50%; transform: translateY(-50%) rotate(0deg); writing-mode: initial; }
+    .ba-arrow-label { writing-mode: initial; margin-top: 0; margin-left: 8px; font-size: 0.62rem; }
+
+    /* Trial pillars */
+    .trial-pillars { gap: 20px; }
     .trial-inner { padding: 36px 20px; border-radius: 18px; }
     .trial-h2 { font-size: 1.75rem; }
     .trial-text { font-size: 0.92rem; margin-bottom: 28px; }
@@ -1083,6 +1246,9 @@
 </head>
 <body>
 
+<!-- Scroll Progress -->
+<div id="scroll-progress"><div id="scroll-progress-bar"></div></div>
+
 <!-- Custom Cursor -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
@@ -1132,30 +1298,36 @@
       <div class="hero-content">
         <div class="hero-badge reveal">
           <div class="hero-badge-dot"></div>
-          LinkedIn Ghostwriting for Founders
+          LinkedIn Ghostwriting · Founders & CEOs
         </div>
         <h1 class="hero-h1 reveal delay-1">
-          I Turn Founders Into<br><span class="blue">Industry Leaders</span><br>on LinkedIn.
+          Turn Your Expertise<br>Into <span class="blue">Influence.</span>
         </h1>
         <p class="hero-sub reveal delay-2">
-          I help founders, CEOs, creators, and consultants build authority through strategic ghostwriting that attracts attention, builds trust, and creates real business opportunities.
+          I help founders, CEOs and business owners grow their authority on LinkedIn through strategic ghostwriting that attracts opportunities — not just impressions.
         </p>
-        <div class="hero-buttons reveal delay-3">
-          <a href="#contact" class="btn-primary">Let's Connect <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
+        <!-- Checkmarks -->
+        <div class="hero-checks reveal delay-3">
+          <div class="hero-check"><span class="hc-tick">✔</span> Personal Branding</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Thought Leadership</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> LinkedIn Ghostwriting</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Founder Positioning</div>
+        </div>
+
+        <div class="hero-buttons reveal delay-4">
+          <a href="#contact" class="btn-primary">Let's Connect <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <a href="#portfolio" class="btn-secondary">View Portfolio</a>
         </div>
-        <div class="hero-stats reveal delay-4">
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="50">0</span>+</div>
-            <div class="hero-stat-label">Founders Helped</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="500">0</span>K+</div>
-            <div class="hero-stat-label">Impressions Generated</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="100">0</span>%</div>
-            <div class="hero-stat-label">Authentic Voice</div>
+
+        <!-- Stars + trust signals -->
+        <div class="hero-trust reveal delay-5">
+          <div class="hero-stars">★★★★★</div>
+          <div class="hero-trust-pills">
+            <span class="trust-pill">✓ Trusted writing process</span>
+            <span class="trust-pill">✓ Fast communication</span>
+            <span class="trust-pill">✓ 100% original content</span>
+            <span class="trust-pill">✓ No AI-generated generic posts</span>
           </div>
         </div>
       </div>
@@ -1164,17 +1336,18 @@
         <div class="hero-visual-bg"></div>
 
         <div class="linkedin-card linkedin-card-1">
+          <div class="sample-badge-hero">✦ Sample Post · Demo Content</div>
           <div class="lc-header">
-            <div class="lc-avatar">AK</div>
+            <div class="lc-avatar">SF</div>
             <div>
-              <div class="lc-name">Arjun Kapoor</div>
-              <div class="lc-role">CEO at TechVerse · 1st</div>
+              <div class="lc-name">Startup Founder</div>
+              <div class="lc-role">CEO · Series A</div>
             </div>
           </div>
           <div class="lc-text">
-            <strong>5 years ago, I was broke and sleeping on my friend's couch.</strong><br><br>
-            Today we crossed ₹10 Cr ARR.<br><br>
-            The one thing that changed everything wasn't funding. It was learning to tell our story.
+            <strong>5 years ago, I was broke and sleeping on a friend's couch.</strong><br><br>
+            Today we crossed $2M ARR.<br><br>
+            The one thing that changed everything wasn't funding. It was learning to tell our story on LinkedIn.
           </div>
           <div class="lc-metrics">
             <div class="lc-metric"><span>4.2K</span>Reactions</div>
@@ -1184,11 +1357,12 @@
         </div>
 
         <div class="linkedin-card linkedin-card-2">
+          <div class="sample-badge-hero">✦ Sample Post · Demo Content</div>
           <div class="lc-header">
-            <div class="lc-avatar" style="background:linear-gradient(135deg,#764ba2,#f64f59)">SR</div>
+            <div class="lc-avatar" style="background:linear-gradient(135deg,#764ba2,#f64f59)">ME</div>
             <div>
-              <div class="lc-name">Shruti Rao</div>
-              <div class="lc-role">Founder, BrandSpark · 2nd</div>
+              <div class="lc-name">Marketing Expert</div>
+              <div class="lc-role">CMO · Agency Owner</div>
             </div>
           </div>
           <div class="lc-text">
@@ -1204,27 +1378,27 @@
 
         <div class="linkedin-card linkedin-card-3">
           <div class="lc-header">
-            <div class="lc-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">VM</div>
+            <div class="lc-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">📈</div>
             <div>
-              <div class="lc-name">Vansh's Client</div>
-              <div class="lc-role">Post Performance</div>
+              <div class="lc-name">Content Performance</div>
+              <div class="lc-role">Sample Metrics</div>
             </div>
           </div>
           <div class="lc-text" style="font-size:0.73rem;">
-            📈 <strong>This week's results:</strong>
+            📊 <strong>What strong content delivers:</strong>
           </div>
           <div class="lc-metrics" style="flex-direction:column;gap:6px">
             <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
-              <span style="color:var(--gray)">Impressions</span>
-              <span style="color:var(--white);font-weight:700">48,200</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
               <span style="color:var(--gray)">Profile Views</span>
-              <span style="color:var(--white);font-weight:700">+340%</span>
+              <span style="color:var(--white);font-weight:700">↑ 3-5x</span>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
               <span style="color:var(--gray)">Inbound DMs</span>
-              <span style="color:var(--white);font-weight:700">12 leads</span>
+              <span style="color:var(--white);font-weight:700">Consistent</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
+              <span style="color:var(--gray)">Authority</span>
+              <span style="color:var(--white);font-weight:700">Compounding</span>
             </div>
           </div>
         </div>
@@ -1291,23 +1465,37 @@
       <div class="trial-glow"></div>
       <div class="trial-animated-border"></div>
       <div style="position:relative;z-index:1">
-        <div class="trial-tag">✦ Limited Offer</div>
-        <h2 class="trial-h2">Try Me Risk-Free.</h2>
+        <div class="trial-tag">✦ Limited Offer · Risk-Free</div>
+        <h2 class="trial-h2">Try My Ghostwriting<br>Free for 7 Days.</h2>
         <p class="trial-text">
-          I offer a completely free 1-week LinkedIn Ghostwriting trial so you can experience my writing style, process, and quality before making any commitment. Zero obligations, zero risk.
+          Experience my writing process before making any commitment. Receive professionally written LinkedIn content for one full week — completely free.
         </p>
+        <div class="trial-pillars">
+          <div class="trial-pillar">
+            <div class="trial-pillar-icon">🚫</div>
+            <div class="trial-pillar-text">No contracts.</div>
+          </div>
+          <div class="trial-pillar">
+            <div class="trial-pillar-icon">🛡️</div>
+            <div class="trial-pillar-text">No risk.</div>
+          </div>
+          <div class="trial-pillar">
+            <div class="trial-pillar-icon">✨</div>
+            <div class="trial-pillar-text">Just quality.</div>
+          </div>
+        </div>
         <div class="trial-points">
           <div class="tp">
             <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            No pressure
+            No credit card required
           </div>
           <div class="tp">
             <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            No long-term contract
+            No long-term commitment
           </div>
           <div class="tp">
             <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            Just results
+            Real results, real writing
           </div>
         </div>
         <a href="#contact" class="btn-primary" style="display:inline-flex">Claim Your Free Week →</a>
@@ -1406,6 +1594,47 @@
   </div>
 </section>
 
+<!-- BEFORE / AFTER -->
+<section id="before-after" class="section-pad" style="background:var(--black)">
+  <div class="container">
+    <div class="section-label reveal">The Transformation</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);max-width:580px;line-height:1.2;margin-bottom:60px" class="reveal delay-1">
+      From Raw Idea to Post That Performs.
+    </h2>
+    <div class="ba-grid">
+      <div class="ba-card ba-before reveal delay-1">
+        <div class="ba-label ba-label-before">✗ Before · Raw Idea</div>
+        <div class="ba-content">
+          <p class="ba-text">"I wanted to post something about how we struggled in the early days and how networking helped us get our first client. Not sure how to make it interesting."</p>
+          <div class="ba-tags">
+            <span class="ba-tag">Unclear</span>
+            <span class="ba-tag">No Hook</span>
+            <span class="ba-tag">No Structure</span>
+            <span class="ba-tag">Forgettable</span>
+          </div>
+        </div>
+      </div>
+      <div class="ba-arrow reveal delay-2">
+        <div class="ba-arrow-line"></div>
+        <div class="ba-arrow-label">Ghostwritten</div>
+      </div>
+      <div class="ba-card ba-after reveal delay-3">
+        <div class="ba-label ba-label-after">✓ After · Ghostwritten Post</div>
+        <div class="ba-content">
+          <p class="ba-text" style="color:var(--text)"><strong style="color:var(--white);font-size:0.95rem">We had $0 in revenue and our first "client" was my co-founder's uncle.</strong><br><br>But that awkward family dinner changed everything.<br><br>He asked one question that made us completely rethink our pitch, our pricing, and our entire go-to-market.<br><br>Here's the question — and what we did differently because of it 👇</p>
+          <div class="ba-tags">
+            <span class="ba-tag ba-tag-after">Strong Hook</span>
+            <span class="ba-tag ba-tag-after">Story-Led</span>
+            <span class="ba-tag ba-tag-after">Curiosity Gap</span>
+            <span class="ba-tag ba-tag-after">High Engagement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:0.78rem;color:var(--gray2);margin-top:28px">* Example for illustration purposes only · Demo Content</p>
+  </div>
+</section>
+
 <!-- WHY WORK WITH ME -->
 <section id="why" class="section-pad">
   <div class="container">
@@ -1477,12 +1706,13 @@
 
     <div class="portfolio-grid">
       <!-- Post 1 -->
-      <div class="li-post reveal delay-1">
+      <div class="li-post reveal delay-1" data-category="startup-story">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av1">RV</div>
+          <div class="li-av av1">SF</div>
           <div>
-            <div class="li-name">Rahul Verma</div>
-            <div class="li-role">Co-Founder & CEO, FinStack</div>
+            <div class="li-name">Startup Founder</div>
+            <div class="li-role">Co-Founder & CEO · Series A</div>
             <div class="li-time">2d · 🌐</div>
           </div>
           <div class="li-badge">Startup Story</div>
@@ -1506,12 +1736,13 @@
       </div>
 
       <!-- Post 2 -->
-      <div class="li-post reveal delay-2">
+      <div class="li-post reveal delay-2" data-category="leadership">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av2">PM</div>
+          <div class="li-av av2">CE</div>
           <div>
-            <div class="li-name">Priya Mehta</div>
-            <div class="li-role">Founder, Scale.ai India</div>
+            <div class="li-name">CEO & Leader</div>
+            <div class="li-role">Founder · Tech Startup</div>
             <div class="li-time">1w · 🌐</div>
           </div>
           <div class="li-badge">Leadership</div>
@@ -1535,12 +1766,13 @@
       </div>
 
       <!-- Post 3 -->
-      <div class="li-post reveal delay-3">
+      <div class="li-post reveal delay-3" data-category="marketing">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av3">KS</div>
+          <div class="li-av av3">ME</div>
           <div>
-            <div class="li-name">Karan Sharma</div>
-            <div class="li-role">CMO, GrowthLab</div>
+            <div class="li-name">Marketing Expert</div>
+            <div class="li-role">CMO · Growth Agency</div>
             <div class="li-time">3d · 🌐</div>
           </div>
           <div class="li-badge">Marketing</div>
@@ -1566,12 +1798,13 @@
       </div>
 
       <!-- Post 4 -->
-      <div class="li-post reveal delay-1">
+      <div class="li-post reveal delay-1" data-category="personal-brand">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av4">NJ</div>
+          <div class="li-av av4">CO</div>
           <div>
-            <div class="li-name">Nisha Jain</div>
-            <div class="li-role">Consultant & Executive Coach</div>
+            <div class="li-name">Consultant</div>
+            <div class="li-role">Executive Coach · Personal Brand</div>
             <div class="li-time">5d · 🌐</div>
           </div>
           <div class="li-badge">Personal Brand</div>
@@ -1595,12 +1828,13 @@
       </div>
 
       <!-- Post 5 -->
-      <div class="li-post reveal delay-2">
+      <div class="li-post reveal delay-2" data-category="startup-story">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av5">AS</div>
+          <div class="li-av av5">AO</div>
           <div>
-            <div class="li-name">Amit Singh</div>
-            <div class="li-role">CEO, RemoteHire</div>
+            <div class="li-name">Agency Owner</div>
+            <div class="li-role">CEO · B2B SaaS</div>
             <div class="li-time">4d · 🌐</div>
           </div>
           <div class="li-badge">Business Growth</div>
@@ -1624,12 +1858,13 @@
       </div>
 
       <!-- Post 6 -->
-      <div class="li-post reveal delay-3">
+      <div class="li-post reveal delay-3" data-category="leadership">
+        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
         <div class="li-header">
-          <div class="li-av av6">DK</div>
+          <div class="li-av av6">FO</div>
           <div>
-            <div class="li-name">Deepika Kumar</div>
-            <div class="li-role">Founder, ProductMinds</div>
+            <div class="li-name">Founder</div>
+            <div class="li-role">Product Lead · Startup</div>
             <div class="li-time">6d · 🌐</div>
           </div>
           <div class="li-badge">Productivity</div>
@@ -1901,15 +2136,25 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#home" class="footer-logo">Vansh<span>.</span></a>
-        <p class="footer-tagline">Helping founders build authority and attract opportunities through LinkedIn Ghostwriting.</p>
+        <p class="footer-tagline">Helping founders build authority and attract opportunities through strategic LinkedIn Ghostwriting.</p>
+        <div class="footer-meta">
+          <div class="footer-meta-item">
+            <span class="footer-meta-label">Response Time</span>
+            <span class="footer-meta-val">Within 24 Hours</span>
+          </div>
+          <div class="footer-meta-item">
+            <span class="footer-meta-label">Location</span>
+            <span class="footer-meta-val">India · Working Worldwide</span>
+          </div>
+        </div>
         <div class="footer-socials" style="margin-top:20px">
-          <a href="https://www.linkedin.com/in/vanshghondwal/" target="_blank" class="footer-social">
+          <a href="https://www.linkedin.com/in/vanshghondwal/" target="_blank" class="footer-social" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="https://www.instagram.com/vanshx.gh" target="_blank" class="footer-social">
+          <a href="https://www.instagram.com/vanshx.gh" target="_blank" class="footer-social" aria-label="Instagram">
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="mailto:vansh.ghondwal@gmail.com" class="footer-social">
+          <a href="mailto:vansh.ghondwal@gmail.com" class="footer-social" aria-label="Email">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
         </div>
@@ -1919,6 +2164,7 @@
         <div class="footer-links">
           <h4>Navigation</h4>
           <a href="#home">Home</a>
+          <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#process">Process</a>
@@ -1934,18 +2180,36 @@
           <a href="#contact">Let's Connect</a>
           <a href="mailto:vansh.ghondwal@gmail.com">Email Me</a>
           <a href="https://www.linkedin.com/in/vanshghondwal/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/vanshx.gh" target="_blank">Instagram</a>
         </div>
       </div>
     </div>
 
+    <div class="footer-disclaimer">
+      All writing samples shown are demo content created for illustrative purposes. No fake client names, fake companies, or fabricated testimonials.
+    </div>
+
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 Vansh Ghondwal. All rights reserved.</div>
+      <div class="footer-copy">© <span id="footer-year">2025</span> Vansh Ghondwal. All rights reserved.</div>
       <div class="footer-made">LinkedIn Ghostwriting for Founders & CEOs</div>
     </div>
   </div>
 </footer>
 
 <script>
+  // ─── Scroll Progress Bar ───
+  const progressBar = document.getElementById('scroll-progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  }, { passive: true });
+
+  // ─── Footer year ───
+  const fyEl = document.getElementById('footer-year');
+  if (fyEl) fyEl.textContent = new Date().getFullYear();
+
   // ─── Loader ───
   window.addEventListener('load', () => {
     setTimeout(() => {
