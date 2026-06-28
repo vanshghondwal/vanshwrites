@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LinkedIn Ghostwriter | Vansh Ghondwal</title>
-<meta name="description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding. Start with a free 1-week trial — no contracts, no risk.">
+<title>Vansh | LinkedIn Ghostwriter</title>
+<meta name="description" content="Helping founders build authority on LinkedIn through strategic ghostwriting, storytelling, and personal branding.">
 <meta name="keywords" content="LinkedIn ghostwriter, personal branding, founder content, LinkedIn strategy, thought leadership">
 <meta name="author" content="Vansh Ghondwal">
-<meta property="og:title" content="LinkedIn Ghostwriter | Vansh Ghondwal">
-<meta property="og:description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding.">
+<meta property="og:title" content="Vansh | LinkedIn Ghostwriter">
+<meta property="og:description" content="Helping founders build authority on LinkedIn through strategic ghostwriting, storytelling, and personal branding.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LinkedIn Ghostwriter | Vansh Ghondwal">
-<meta name="twitter:description" content="Helping founders build authority through strategic LinkedIn ghostwriting and personal branding.">
+<meta name="twitter:title" content="Vansh | LinkedIn Ghostwriter">
+<meta name="twitter:description" content="Helping founders build authority on LinkedIn through strategic ghostwriting, storytelling, and personal branding.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -326,18 +326,6 @@
     cursor: none;
   }
   .btn-secondary:hover { border-color: var(--blue); color: var(--blue); background: rgba(10,102,194,0.05); transform: translateY(-2px); }
-  .hero-stats {
-    display: flex; gap: 40px; margin-top: 56px;
-    padding-top: 40px;
-    border-top: 1px solid var(--border);
-  }
-  .hero-stat-num {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.8rem; font-weight: 800;
-    color: var(--white); letter-spacing: -0.03em;
-  }
-  .hero-stat-num span { color: var(--blue); }
-  .hero-stat-label { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
 
   /* Hero Checks */
   .hero-checks {
@@ -348,34 +336,17 @@
     display: flex; align-items: center; gap: 8px;
     font-size: 0.88rem; color: var(--gray); font-weight: 500;
   }
-  .hc-tick {
-    color: var(--blue); font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
-  }
+  .hc-tick { color: var(--blue); font-size: 0.8rem; font-weight: 700; flex-shrink: 0; }
 
   /* Hero Trust */
   .hero-trust { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
-  .hero-stars {
-    color: #f59e0b; font-size: 1rem; letter-spacing: 2px; margin-bottom: 12px;
-  }
-  .hero-trust-pills {
-    display: flex; flex-wrap: wrap; gap: 8px;
-  }
+  .hero-trust-pills { display: flex; flex-wrap: wrap; gap: 8px; }
   .trust-pill {
     font-size: 0.72rem; color: var(--gray);
     background: rgba(255,255,255,0.04);
     border: 1px solid var(--border);
     border-radius: 100px; padding: 4px 12px;
     white-space: nowrap;
-  }
-
-  /* Sample Badge on Hero Cards */
-  .sample-badge-hero {
-    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
-    color: var(--blue-light); text-transform: uppercase;
-    background: rgba(10,102,194,0.12);
-    border: 1px solid rgba(10,102,194,0.25);
-    border-radius: 4px; padding: 2px 7px;
-    display: inline-block; margin-bottom: 10px;
   }
 
   /* ─── Hero Visual ─── */
@@ -442,14 +413,19 @@
   }
   .lc-metric { font-size: 0.68rem; color: var(--gray); }
   .lc-metric span { color: var(--white); font-weight: 600; font-size: 0.75rem; display: block; }
+  .sample-badge-hero {
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
+    color: var(--blue-light); text-transform: uppercase;
+    background: rgba(10,102,194,0.12);
+    border: 1px solid rgba(10,102,194,0.25);
+    border-radius: 4px; padding: 2px 7px;
+    display: inline-block; margin-bottom: 10px;
+  }
 
   /* ─── ABOUT ─── */
   #about { background: var(--surface); }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-  .about-visual {
-    position: relative;
-    height: 440px;
-  }
+  .about-visual { position: relative; height: 440px; }
   .about-card-main {
     position: absolute;
     left: 0; top: 0;
@@ -469,16 +445,17 @@
     margin-bottom: 24px;
   }
   .about-quote .hl { color: var(--blue); }
-  .about-mini-stat {
-    display: flex; gap: 24px;
+  .about-values { display: flex; flex-direction: column; gap: 10px; }
+  .av-item {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.82rem; color: var(--gray); font-weight: 500;
   }
-  .ams { }
-  .ams-n {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2rem; font-weight: 800;
-    color: var(--blue); letter-spacing: -0.03em;
+  .av-dot {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: rgba(10,102,194,0.15); border: 1px solid rgba(10,102,194,0.35);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    font-size: 0.6rem; color: var(--blue);
   }
-  .ams-l { font-size: 0.78rem; color: var(--gray); }
   .about-float-card {
     position: absolute;
     bottom: 20px; right: 0;
@@ -488,7 +465,7 @@
     box-shadow: 0 20px 60px rgba(10,102,194,0.35);
   }
   .afc-label { font-size: 0.7rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
-  .afc-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--white); }
+  .afc-val { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--white); line-height: 1.3; }
   .about-h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2rem, 3.5vw, 2.8rem);
@@ -571,40 +548,20 @@
     font-size: 1.05rem; color: var(--gray); line-height: 1.75;
     max-width: 620px; margin: 0 auto 36px;
   }
-  .trial-points {
-    display: flex; justify-content: center; gap: 40px;
-    margin-bottom: 40px; flex-wrap: wrap;
+  .trial-guarantees {
+    display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 40px;
   }
-  .tp { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--gray); }
-  .tp-check {
-    width: 20px; height: 20px; border-radius: 50%;
-    background: rgba(10,102,194,0.15); border: 1px solid rgba(10,102,194,0.4);
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-  }
-  .tp-check svg { width: 10px; height: 10px; fill: var(--blue); }
-
-  /* Trial pillars */
-  .trial-pillars {
-    display: flex; gap: 32px; justify-content: center;
-    margin-bottom: 28px; flex-wrap: wrap;
-  }
-  .trial-pillar {
-    display: flex; flex-direction: column; align-items: center; gap: 6px;
-  }
-  .trial-pillar-icon { font-size: 1.6rem; }
-  .trial-pillar-text {
-    font-size: 0.88rem; font-weight: 600; color: var(--white);
-  }
-
-  /* Sample Post label on portfolio cards */
-  .sample-post-label {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em;
-    color: rgba(255,255,255,0.4); text-transform: uppercase;
+  .tg-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.88rem; color: var(--text); font-weight: 500;
     background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 4px; padding: 2px 8px;
-    margin-bottom: 10px; display: block;
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 16px;
+  }
+  .tg-icon { font-size: 1rem; }
+  .trial-note {
+    font-size: 0.78rem; color: var(--gray2); margin-top: 16px;
+    font-style: italic;
   }
 
   /* ─── SERVICES ─── */
@@ -657,17 +614,6 @@
   }
   .svc-list li:last-child { border-bottom: none; }
   .svc-list li::before { content:''; width: 4px; height: 4px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
-  .svc-card-featured {
-    grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(10,102,194,0.15) 0%, rgba(10,102,194,0.05) 100%);
-    border-color: rgba(10,102,194,0.3);
-    display: flex; align-items: center; gap: 48px;
-    padding: 36px 40px;
-  }
-  .sfc-left { flex: 1; }
-  .sfc-right {
-    display: flex; gap: 32px; flex-wrap: wrap;
-  }
 
   /* ─── BEFORE / AFTER ─── */
   .ba-grid {
@@ -718,6 +664,47 @@
     margin-top: 24px;
   }
 
+  /* ─── WHO I WORK WITH ─── */
+  #who { background: var(--surface); }
+  .who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .who-col-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem; font-weight: 700;
+    color: var(--white); margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .who-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .who-item {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 0.9rem; color: var(--text); font-weight: 500;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    transition: all 0.25s;
+  }
+  .who-item:hover { border-color: rgba(10,102,194,0.35); transform: translateX(4px); }
+  .who-item-good { }
+  .who-item-bad { color: var(--gray); }
+  .who-tick { font-size: 0.85rem; flex-shrink: 0; }
+  .who-cross { font-size: 0.85rem; flex-shrink: 0; color: var(--gray2); }
+  .who-belief {
+    margin-top: 40px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-size: 0.95rem; color: var(--text);
+    font-style: italic; line-height: 1.7;
+    grid-column: 1 / -1;
+  }
+
   /* ─── WHY WORK WITH ME ─── */
   #why { background: var(--black); }
   .why-grid {
@@ -735,11 +722,17 @@
     cursor: default;
   }
   .why-card:hover { border-color: rgba(10,102,194,0.4); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.3); }
-  .why-num {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.7rem; font-weight: 700; color: var(--blue);
-    letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px;
+  .why-icon {
+    width: 36px; height: 36px;
+    background: rgba(10,102,194,0.12);
+    border: 1px solid rgba(10,102,194,0.25);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
   }
+  .why-card:hover .why-icon { background: rgba(10,102,194,0.2); }
   .why-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1rem; font-weight: 700;
@@ -748,7 +741,7 @@
   .why-desc { font-size: 0.82rem; color: var(--gray); line-height: 1.6; margin-top: 8px; }
 
   /* ─── PORTFOLIO ─── */
-  #portfolio { background: var(--surface); }
+  #portfolio { background: var(--black); }
   .portfolio-tabs {
     display: flex; gap: 8px; margin-bottom: 48px; flex-wrap: wrap;
   }
@@ -773,6 +766,7 @@
     transition: all 0.3s;
     cursor: default;
     transform-style: preserve-3d;
+    display: flex; flex-direction: column;
   }
   .li-post:hover { border-color: rgba(10,102,194,0.35); box-shadow: 0 20px 60px rgba(0,0,0,0.4); transform: translateY(-6px); }
   .li-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; }
@@ -788,7 +782,6 @@
   .av4 { background: linear-gradient(135deg, #f093fb, #f5576c); }
   .av5 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
   .av6 { background: linear-gradient(135deg, #fa709a, #fee140); }
-  .av7 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
   .li-name { font-size: 0.85rem; font-weight: 700; color: var(--white); }
   .li-role { font-size: 0.72rem; color: var(--gray); margin-top: 1px; }
   .li-time { font-size: 0.68rem; color: var(--gray2); margin-top: 2px; }
@@ -799,7 +792,16 @@
     font-size: 0.65rem; font-weight: 700; color: var(--blue-light);
     text-transform: uppercase; letter-spacing: 0.08em;
   }
-  .li-content { font-size: 0.82rem; color: var(--text); line-height: 1.65; }
+  .li-demo-label {
+    display: block; margin-bottom: 8px;
+    font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.35); text-transform: uppercase;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px; padding: 2px 8px;
+    width: fit-content;
+  }
+  .li-content { font-size: 0.82rem; color: var(--text); line-height: 1.65; flex: 1; }
   .li-content .hook { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.88rem; font-weight: 700; color: var(--white); display: block; margin-bottom: 8px; }
   .li-footer {
     display: flex; gap: 16px; margin-top: 14px;
@@ -807,15 +809,20 @@
   }
   .li-action { font-size: 0.72rem; color: var(--gray); display: flex; align-items: center; gap: 5px; }
   .li-action svg { width: 13px; height: 13px; fill: var(--gray); }
-  .li-reactions {
-    display: flex; align-items: center; gap: 4px;
-    margin-top: 10px; margin-bottom: 2px;
+
+  /* Post Metadata */
+  .post-meta {
+    margin-top: 14px; padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6px;
   }
-  .li-emoji { font-size: 0.85rem; }
-  .li-count { font-size: 0.73rem; color: var(--gray); margin-left: 4px; }
+  .pm-item { }
+  .pm-label { font-size: 0.6rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 0.1em; }
+  .pm-val { font-size: 0.75rem; color: var(--gray); margin-top: 1px; }
 
   /* ─── PROCESS ─── */
-  #process { background: var(--black); }
+  #process { background: var(--surface); }
   .process-timeline {
     position: relative;
     max-width: 720px;
@@ -849,24 +856,15 @@
     transition: all 0.3s;
   }
   .process-step:hover .process-content { border-color: rgba(10,102,194,0.3); }
-  .process-step-num {
-    font-size: 0.7rem; font-weight: 700; color: var(--blue);
-    letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 4px;
-  }
   .process-step-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.1rem; font-weight: 700;
     color: var(--white); margin-bottom: 8px; letter-spacing: -0.01em;
   }
   .process-step-text { font-size: 0.88rem; color: var(--gray); line-height: 1.65; }
-  .process-arrow {
-    position: absolute; left: 12px; bottom: -28px;
-    color: rgba(10,102,194,0.5); font-size: 1.2rem;
-    z-index: 2;
-  }
 
   /* ─── FAQ ─── */
-  #faq { background: var(--surface); }
+  #faq { background: var(--black); }
   .faq-grid { max-width: 780px; margin: 60px auto 0; }
   .faq-item {
     border-bottom: 1px solid var(--border);
@@ -896,11 +894,11 @@
 
   /* ─── FINAL CTA ─── */
   #cta {
-    background: var(--black);
+    background: var(--surface);
     padding: 140px 0;
     text-align: center;
   }
-  .cta-inner { max-width: 700px; margin: 0 auto; }
+  .cta-inner { max-width: 700px; margin: 0 auto; position: relative; z-index: 1; }
   .cta-glow {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
@@ -918,15 +916,24 @@
   .cta-buttons { display: flex; gap: 16px; justify-content: center; }
 
   /* ─── CONTACT ─── */
-  #contact { background: var(--surface); }
+  #contact { background: var(--black); }
   .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; }
   .contact-info h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 2rem; font-weight: 800;
     color: var(--white); letter-spacing: -0.03em; margin-bottom: 16px;
   }
-  .contact-info p { font-size: 0.95rem; color: var(--gray); line-height: 1.7; margin-bottom: 40px; }
-  .contact-links { display: flex; flex-direction: column; gap: 16px; }
+  .contact-info p { font-size: 0.95rem; color: var(--gray); line-height: 1.7; margin-bottom: 32px; }
+  .contact-notes {
+    display: flex; flex-direction: column; gap: 8px;
+    margin-bottom: 32px; padding: 16px;
+    background: rgba(10,102,194,0.06);
+    border: 1px solid rgba(10,102,194,0.15);
+    border-radius: 10px;
+  }
+  .contact-note { font-size: 0.8rem; color: var(--gray); display: flex; align-items: center; gap: 8px; }
+  .contact-note-dot { color: var(--blue); font-size: 0.7rem; }
+  .contact-links { display: flex; flex-direction: column; gap: 12px; }
   .contact-link {
     display: flex; align-items: center; gap: 14px;
     text-decoration: none;
@@ -976,7 +983,7 @@
     display: flex; justify-content: space-between; align-items: flex-start;
     flex-wrap: wrap; gap: 40px; margin-bottom: 48px;
   }
-  .footer-brand { max-width: 280px; }
+  .footer-brand { max-width: 300px; }
   .footer-logo {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.4rem; font-weight: 800;
@@ -985,11 +992,15 @@
   }
   .footer-logo span { color: var(--blue); }
   .footer-tagline { font-size: 0.85rem; color: var(--gray); margin-top: 10px; line-height: 1.6; }
+  .footer-meta { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .footer-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .footer-meta-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray2); }
+  .footer-meta-val { font-size: 0.82rem; color: var(--gray); font-weight: 500; }
   .footer-links { display: flex; flex-direction: column; gap: 10px; }
   .footer-links h4 { font-size: 0.75rem; font-weight: 700; color: var(--white); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
   .footer-links a { font-size: 0.85rem; color: var(--gray); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--white); }
-  .footer-socials { display: flex; gap: 10px; margin-top: 4px; }
+  .footer-socials { display: flex; gap: 10px; margin-top: 16px; }
   .footer-social {
     width: 38px; height: 38px; border-radius: 8px;
     background: var(--card); border: 1px solid var(--border);
@@ -1007,14 +1018,6 @@
   }
   .footer-copy { font-size: 0.8rem; color: var(--gray2); }
   .footer-made { font-size: 0.8rem; color: var(--gray2); }
-
-  /* Footer meta */
-  .footer-meta { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
-  .footer-meta-item { display: flex; flex-direction: column; gap: 1px; }
-  .footer-meta-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray2); }
-  .footer-meta-val { font-size: 0.82rem; color: var(--gray); font-weight: 500; }
-
-  /* Footer disclaimer */
   .footer-disclaimer {
     border-top: 1px solid var(--border);
     padding: 16px 0;
@@ -1023,245 +1026,130 @@
     font-style: italic;
   }
 
-  /* ─── Responsive ─── */
+  /* ─── Micro Trust Bar ─── */
+  .trust-bar {
+    background: var(--card);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    overflow: hidden;
+  }
+  .trust-bar-inner {
+    display: flex; gap: 40px; align-items: center;
+    white-space: nowrap;
+    animation: ticker 25s linear infinite;
+    width: max-content;
+  }
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .trust-bar-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.78rem; color: var(--gray); font-weight: 500;
+    flex-shrink: 0;
+  }
+  .trust-bar-dot { width: 4px; height: 4px; background: var(--blue); border-radius: 50%; }
 
-  /* Tablet - 1024px */
+  /* ─── Responsive ─── */
   @media (max-width: 1024px) {
-    .hero-grid { grid-template-columns: 1fr; gap: 48px; min-height: auto; padding: 60px 0 60px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; min-height: auto; padding: 60px 0; }
     .hero-visual { height: 340px; order: -1; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
-    .svc-card-featured { flex-direction: column; gap: 24px; }
-    .sfc-right { gap: 20px; }
     .why-grid { grid-template-columns: repeat(2, 1fr); }
     .about-grid { grid-template-columns: 1fr; }
     .about-visual { height: 300px; order: -1; }
     .contact-grid { grid-template-columns: 1fr; gap: 48px; }
     .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .who-grid { grid-template-columns: 1fr; }
   }
 
-  /* Mobile - 768px */
   @media (max-width: 768px) {
-    /* Nav */
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
     nav { padding: 0 20px; height: 60px; }
-
-    /* Layout */
     .section-pad { padding: 60px 0; }
     .container { padding: 0 18px; }
-
-    /* Hero */
     #home { padding-top: 60px; min-height: 100svh; }
     .hero-grid { padding: 32px 0 40px; gap: 0; grid-template-columns: 1fr; }
     .hero-visual { display: none; }
     .hero-h1 { font-size: clamp(1.85rem, 7.5vw, 2.4rem); margin-bottom: 16px; }
-    .hero-sub { font-size: 0.92rem; margin-bottom: 28px; line-height: 1.65; }
+    .hero-sub { font-size: 0.92rem; margin-bottom: 28px; }
     .hero-badge { font-size: 0.68rem; padding: 5px 12px; margin-bottom: 20px; }
     .hero-buttons { flex-direction: column; gap: 12px; }
     .hero-buttons a { justify-content: center; text-align: center; width: 100%; padding: 14px 20px; }
-    .hero-stats { flex-wrap: wrap; gap: 16px; margin-top: 32px; padding-top: 24px; }
-    .hero-stat-num { font-size: 1.45rem; }
-    .hero-stat-label { font-size: 0.75rem; }
-
-    /* About */
-    .about-visual { display: none; }
-    .about-h2 { font-size: 1.7rem; }
-    .about-text { font-size: 0.93rem; }
-    .about-goal { font-size: 0.9rem; }
-
-    /* Hero checks */
     .hero-checks { grid-template-columns: 1fr; gap: 8px; margin-bottom: 24px; }
     .hero-trust { margin-top: 24px; }
-    .hero-trust-pills { gap: 6px; }
-    .trust-pill { font-size: 0.68rem; }
-
-    /* Before/After */
+    .about-visual { display: none; }
+    .about-h2 { font-size: 1.7rem; }
     .ba-grid { grid-template-columns: 1fr; gap: 16px; }
     .ba-arrow { flex-direction: row; min-width: auto; }
     .ba-arrow-line { width: 40px; height: 2px; background: linear-gradient(to right, rgba(239,68,68,0.4), var(--blue)); }
     .ba-arrow-line::after { content: '→'; bottom: auto; left: auto; right: -14px; top: 50%; transform: translateY(-50%) rotate(0deg); writing-mode: initial; }
     .ba-arrow-label { writing-mode: initial; margin-top: 0; margin-left: 8px; font-size: 0.62rem; }
-
-    /* Trial pillars */
-    .trial-pillars { gap: 20px; }
     .trial-inner { padding: 36px 20px; border-radius: 18px; }
     .trial-h2 { font-size: 1.75rem; }
     .trial-text { font-size: 0.92rem; margin-bottom: 28px; }
-    .trial-points { flex-direction: column; align-items: flex-start; gap: 10px; }
-    .tp { font-size: 0.85rem; }
-
-    /* Services */
-    #services { }
+    .trial-guarantees { flex-direction: column; align-items: flex-start; gap: 10px; }
     .services-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 36px; }
-    .svc-card { padding: 24px 20px; }
-    .svc-card-featured { padding: 28px 22px; }
-    .svc-title { font-size: 1rem; }
-    .svc-list li { font-size: 0.82rem; }
-    .sfc-right { flex-direction: column; gap: 16px; }
-
-    /* Why */
     .why-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 36px; }
-    .why-card { padding: 20px 16px; }
-    .why-title { font-size: 0.88rem; }
-    .why-desc { font-size: 0.76rem; }
-
-    /* Portfolio */
     .portfolio-grid { grid-template-columns: 1fr; gap: 14px; }
-    .portfolio-tabs {
-      gap: 6px; margin-bottom: 28px;
-      overflow-x: auto; flex-wrap: nowrap;
-      padding-bottom: 8px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
+    .portfolio-tabs { gap: 6px; margin-bottom: 28px; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .portfolio-tabs::-webkit-scrollbar { display: none; }
     .ptab { font-size: 0.74rem; padding: 7px 13px; white-space: nowrap; flex-shrink: 0; }
-    .li-post { padding: 18px; }
-    .li-content { font-size: 0.8rem; }
-    .li-content .hook { font-size: 0.84rem; }
-
-    /* Process */
-    .process-timeline { margin-top: 40px; }
     .process-step { gap: 14px; margin-bottom: 36px; }
     .process-num { width: 42px; height: 42px; font-size: 0.8rem; }
     .process-line { left: 21px; }
     .process-content { padding: 16px 18px; }
-    .process-step-title { font-size: 0.98rem; }
-    .process-step-text { font-size: 0.84rem; }
-
-    /* FAQ */
     .faq-q { font-size: 0.9rem; padding: 18px 0; }
-    .faq-a { font-size: 0.86rem; }
     .faq-grid { margin-top: 36px; }
-
-    /* CTA */
     #cta { padding: 70px 0; }
     .cta-h2 { font-size: clamp(1.7rem, 6.5vw, 2.2rem); }
-    .cta-text { font-size: 0.92rem; margin-bottom: 28px; }
     .cta-buttons { flex-direction: column; align-items: stretch; gap: 12px; }
     .cta-buttons a { justify-content: center; text-align: center; width: 100%; }
-
-    /* Contact */
     .contact-grid { gap: 32px; }
-    .contact-info h2 { font-size: 1.5rem; }
-    .contact-info p { font-size: 0.88rem; margin-bottom: 28px; }
     .form-row { grid-template-columns: 1fr; gap: 14px; }
-    .form-group input, .form-group textarea { font-size: 16px; /* prevents iOS zoom */ padding: 13px 14px; }
-    .form-group textarea { min-height: 110px; }
-    .contact-link { padding: 12px 14px; gap: 12px; }
-    .cl-val { font-size: 0.82rem; }
-    #formBtn { font-size: 0.95rem !important; padding: 14px !important; cursor: pointer !important; }
-
-    /* Footer */
+    .form-group input, .form-group textarea { font-size: 16px; padding: 13px 14px; }
     .footer-inner { flex-direction: column; gap: 32px; margin-bottom: 36px; }
     .footer-brand { max-width: 100%; }
     .footer-bottom { flex-direction: column; text-align: center; gap: 6px; }
-    .footer-tagline { font-size: 0.82rem; }
-
-    /* Section label */
-    .section-label { font-size: 0.7rem; }
-
-    /* Loader */
-    .loader-logo { font-size: 2rem; }
-
-    /* Cursor off on touch */
     #cursor, #cursor-ring, #mouse-glow { display: none; }
     body { cursor: auto; }
     a, button { cursor: pointer; }
     .btn-primary, .btn-secondary, .nav-cta { cursor: pointer !important; }
   }
 
-  /* Small Mobile - 480px */
   @media (max-width: 480px) {
-    /* Layout */
     .container { padding: 0 16px; }
     nav { padding: 0 16px; height: 58px; }
     .section-pad { padding: 52px 0; }
-
-    /* Hero */
     #home { padding-top: 58px; }
     .hero-h1 { font-size: 1.75rem; line-height: 1.15; }
-    .hero-sub { font-size: 0.88rem; }
-    .hero-stats { gap: 12px; }
-    .hero-stat-num { font-size: 1.3rem; }
-
-    /* Why */
     .why-grid { grid-template-columns: 1fr; gap: 10px; }
-
-    /* Trial */
     .trial-inner { padding: 28px 16px; border-radius: 14px; }
     .trial-h2 { font-size: 1.5rem; }
-    .trial-text { font-size: 0.87rem; }
-
-    /* Services */
-    .svc-card { padding: 20px 16px; }
-    .svc-icon { width: 42px; height: 42px; }
-
-    /* Process */
-    .process-num { width: 38px; height: 38px; font-size: 0.75rem; }
-    .process-line { left: 19px; }
-    .process-content { padding: 14px 16px; border-radius: 10px; }
-
-    /* Portfolio */
-    .li-post { padding: 16px; }
-    .li-name { font-size: 0.8rem; }
-    .li-role { font-size: 0.68rem; }
-
-    /* FAQ */
-    .faq-q { font-size: 0.86rem; padding: 16px 0; }
-    .faq-q svg { width: 18px; height: 18px; flex-shrink: 0; }
-
-    /* About */
-    .about-goal { padding: 14px 16px; font-size: 0.86rem; }
-
-    /* Contact */
-    .contact-info h2 { font-size: 1.4rem; }
-    .contact-link { padding: 10px 12px; }
-    .cl-icon { width: 32px; height: 32px; }
-    .cl-icon svg { width: 15px; height: 15px; }
-
-    /* CTA */
+    .who-grid { grid-template-columns: 1fr; }
     #cta { padding: 56px 0; }
     .cta-h2 { font-size: 1.6rem; }
-    .cta-text { font-size: 0.87rem; }
-
-    /* Footer */
     footer { padding: 36px 0 24px; }
     .footer-logo { font-size: 1.2rem; }
-
-    /* Mobile menu */
     .mobile-menu { top: 58px; }
-  }
-
-  /* Very small - 360px */
-  @media (max-width: 360px) {
-    .hero-h1 { font-size: 1.6rem; }
-    .hero-badge { font-size: 0.63rem; }
-    .trial-h2 { font-size: 1.35rem; }
-    .cta-h2 { font-size: 1.45rem; }
-    .why-title { font-size: 0.84rem; }
-    .ptab { font-size: 0.7rem; padding: 6px 11px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Scroll Progress -->
 <div id="scroll-progress"><div id="scroll-progress-bar"></div></div>
-
-<!-- Custom Cursor -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 <div id="mouse-glow"></div>
 
-<!-- Floating Blobs -->
 <div class="blob-container">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
 </div>
 
-<!-- Loader -->
 <div id="loader">
   <div class="loader-logo">Vansh<span>.</span></div>
   <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
@@ -1301,33 +1189,33 @@
           LinkedIn Ghostwriting · Founders & CEOs
         </div>
         <h1 class="hero-h1 reveal delay-1">
-          Turn Your Expertise<br>Into <span class="blue">Influence.</span>
+          Become the Voice<br>People <span class="blue">Remember.</span>
         </h1>
         <p class="hero-sub reveal delay-2">
-          I help founders, CEOs and business owners grow their authority on LinkedIn through strategic ghostwriting that attracts opportunities — not just impressions.
+          Strategic LinkedIn ghostwriting for founders, consultants, and business owners who want to build real authority — not just follower counts.
         </p>
 
-        <!-- Checkmarks -->
         <div class="hero-checks reveal delay-3">
-          <div class="hero-check"><span class="hc-tick">✔</span> Personal Branding</div>
-          <div class="hero-check"><span class="hc-tick">✔</span> Thought Leadership</div>
-          <div class="hero-check"><span class="hc-tick">✔</span> LinkedIn Ghostwriting</div>
-          <div class="hero-check"><span class="hc-tick">✔</span> Founder Positioning</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Research-Driven Writing</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Human-Written Content</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Personalized Strategy</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Authentic Founder Voice</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Built for Long-Term Authority</div>
+          <div class="hero-check"><span class="hc-tick">✔</span> Clear Communication</div>
         </div>
 
         <div class="hero-buttons reveal delay-4">
           <a href="#contact" class="btn-primary">Let's Connect <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+          <a href="#portfolio" class="btn-secondary">View Writing Samples</a>
         </div>
 
-        <!-- Stars + trust signals -->
         <div class="hero-trust reveal delay-5">
-          <div class="hero-stars">★★★★★</div>
           <div class="hero-trust-pills">
-            <span class="trust-pill">✓ Trusted writing process</span>
-            <span class="trust-pill">✓ Fast communication</span>
-            <span class="trust-pill">✓ 100% original content</span>
-            <span class="trust-pill">✓ No AI-generated generic posts</span>
+            <span class="trust-pill">✓ Original Writing</span>
+            <span class="trust-pill">✓ Research First</span>
+            <span class="trust-pill">✓ Human Strategy</span>
+            <span class="trust-pill">✓ No Long-Term Contracts</span>
+            <span class="trust-pill">✓ Free One-Week Trial</span>
           </div>
         </div>
       </div>
@@ -1340,19 +1228,19 @@
           <div class="lc-header">
             <div class="lc-avatar">SF</div>
             <div>
-              <div class="lc-name">Startup Founder</div>
-              <div class="lc-role">CEO · Series A</div>
+              <div class="lc-name">SaaS Founder (Sample)</div>
+              <div class="lc-role">Illustrative Example</div>
             </div>
           </div>
           <div class="lc-text">
-            <strong>5 years ago, I was broke and sleeping on a friend's couch.</strong><br><br>
-            Today we crossed $2M ARR.<br><br>
-            The one thing that changed everything wasn't funding. It was learning to tell our story on LinkedIn.
+            <strong>We had $0 in revenue and our first "client" was my co-founder's uncle.</strong><br><br>
+            But that awkward family dinner changed our entire go-to-market.<br><br>
+            He asked one question that made us rethink everything 👇
           </div>
           <div class="lc-metrics">
-            <div class="lc-metric"><span>4.2K</span>Reactions</div>
-            <div class="lc-metric"><span>312</span>Comments</div>
-            <div class="lc-metric"><span>89</span>Reposts</div>
+            <div class="lc-metric"><span>Hook</span>Curiosity Gap</div>
+            <div class="lc-metric"><span>Style</span>Storytelling</div>
+            <div class="lc-metric"><span>Goal</span>Authority</div>
           </div>
         </div>
 
@@ -1361,44 +1249,41 @@
           <div class="lc-header">
             <div class="lc-avatar" style="background:linear-gradient(135deg,#764ba2,#f64f59)">ME</div>
             <div>
-              <div class="lc-name">Marketing Expert</div>
-              <div class="lc-role">CMO · Agency Owner</div>
+              <div class="lc-name">Marketing Consultant (Sample)</div>
+              <div class="lc-role">Illustrative Example</div>
             </div>
           </div>
           <div class="lc-text">
             Most founders think marketing is about shouting louder.<br><br>
             <strong>The best ones know it's about being heard differently.</strong><br><br>
-            Here's the content framework that brought us 3 enterprise clients this quarter 👇
+            Here's the framework that brought 3 enterprise clients this quarter 👇
           </div>
           <div class="lc-metrics">
-            <div class="lc-metric"><span>2.8K</span>Reactions</div>
-            <div class="lc-metric"><span>187</span>Comments</div>
+            <div class="lc-metric"><span>Hook</span>Contrast</div>
+            <div class="lc-metric"><span>Style</span>Insight-led</div>
           </div>
         </div>
 
         <div class="linkedin-card linkedin-card-3">
           <div class="lc-header">
-            <div class="lc-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">📈</div>
+            <div class="lc-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">📊</div>
             <div>
-              <div class="lc-name">Content Performance</div>
-              <div class="lc-role">Sample Metrics</div>
+              <div class="lc-name">What Strong Content Builds</div>
+              <div class="lc-role">Writing Principles</div>
             </div>
           </div>
-          <div class="lc-text" style="font-size:0.73rem;">
-            📊 <strong>What strong content delivers:</strong>
-          </div>
-          <div class="lc-metrics" style="flex-direction:column;gap:6px">
+          <div class="lc-metrics" style="flex-direction:column;gap:8px;margin-top:0;padding-top:0;border-top:none">
             <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
-              <span style="color:var(--gray)">Profile Views</span>
-              <span style="color:var(--white);font-weight:700">↑ 3-5x</span>
+              <span style="color:var(--gray)">Perceived Authority</span>
+              <span style="color:var(--white);font-weight:700">↑ Real</span>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
-              <span style="color:var(--gray)">Inbound DMs</span>
+              <span style="color:var(--gray)">Inbound Opportunities</span>
               <span style="color:var(--white);font-weight:700">Consistent</span>
             </div>
             <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
-              <span style="color:var(--gray)">Authority</span>
-              <span style="color:var(--white);font-weight:700">Compounding</span>
+              <span style="color:var(--gray)">Trust Compounding</span>
+              <span style="color:var(--white);font-weight:700">Long-term</span>
             </div>
           </div>
         </div>
@@ -1406,6 +1291,29 @@
     </div>
   </div>
 </section>
+
+<!-- MICRO TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Original Writing</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Research First</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Human Strategy</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Personalized Approach</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Transparent Process</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>No Long-Term Contracts</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Free One-Week Trial</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Clear Communication</div>
+    <!-- duplicate for seamless loop -->
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Original Writing</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Research First</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Human Strategy</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Personalized Approach</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Transparent Process</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>No Long-Term Contracts</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Free One-Week Trial</div>
+    <div class="trust-bar-item"><div class="trust-bar-dot"></div>Clear Communication</div>
+  </div>
+</div>
 
 <!-- ABOUT -->
 <section id="about" class="section-pad">
@@ -1416,25 +1324,16 @@
           <div class="about-quote">
             Your expertise deserves to be heard by the <span class="hl">right people</span>, not lost in the scroll.
           </div>
-          <div class="about-mini-stat">
-            <div class="ams">
-              <div class="ams-n">3+</div>
-              <div class="ams-l">Years writing</div>
-            </div>
-            <div class="ams">
-              <div class="ams-n">50+</div>
-              <div class="ams-l">Founders served</div>
-            </div>
-            <div class="ams">
-              <div class="ams-n">1M+</div>
-              <div class="ams-l">Total reach</div>
-            </div>
+          <div class="about-values">
+            <div class="av-item"><div class="av-dot">✓</div>Research-Driven Writing</div>
+            <div class="av-item"><div class="av-dot">✓</div>Human-Written Content</div>
+            <div class="av-item"><div class="av-dot">✓</div>Authentic Founder Voice</div>
+            <div class="av-item"><div class="av-dot">✓</div>Built for Long-Term Authority</div>
           </div>
         </div>
         <div class="about-float-card">
-          <div class="afc-label">Avg. Growth</div>
-          <div class="afc-val">+380%</div>
-          <div style="font-size:0.72rem;color:rgba(255,255,255,0.7);margin-top:2px">in LinkedIn reach</div>
+          <div class="afc-label">My Approach</div>
+          <div class="afc-val">Research before<br>writing. Always.</div>
         </div>
       </div>
 
@@ -1442,16 +1341,16 @@
         <div class="section-label reveal">About Me</div>
         <h2 class="about-h2 reveal delay-1">Hi, I'm Vansh.</h2>
         <p class="about-text reveal delay-2">
-          I help busy founders and professionals build a powerful LinkedIn presence without spending hours writing content.
+          I help busy founders, consultants, and business owners build a powerful LinkedIn presence without spending hours staring at a blank page.
         </p>
         <p class="about-text reveal delay-3">
-          Every post is carefully researched, strategically written, and crafted to sound authentic to your personal brand — because your audience should feel like they're reading <em>you</em>, not a ghostwriter.
+          Before I write a single word, I spend time understanding how you think, what you believe, and what makes your perspective unique. The result? Content that reads like you wrote it — because it reflects your real voice.
         </p>
         <p class="about-text reveal delay-4">
-          Whether you're a startup founder looking for your first 1,000 followers, or a seasoned CEO who wants to attract top talent and investors — I create content that makes people stop, read, and reach out.
+          My process is grounded in research: understanding your audience's problems, studying what resonates in your niche, and crafting each post with a clear strategic purpose. Whether you're looking to attract clients, build trust with investors, or grow your network — the writing serves that goal.
         </p>
         <div class="about-goal reveal delay-5">
-          My goal is simple: <strong style="color:var(--white)">Turn your expertise into content people remember.</strong>
+          My goal is simple: <strong style="color:var(--white)">Turn your expertise into content that positions you as the authority people seek out.</strong>
         </div>
       </div>
     </div>
@@ -1465,40 +1364,19 @@
       <div class="trial-glow"></div>
       <div class="trial-animated-border"></div>
       <div style="position:relative;z-index:1">
-        <div class="trial-tag">✦ Limited Offer · Risk-Free</div>
+        <div class="trial-tag">✦ Limited Availability · Risk-Free</div>
         <h2 class="trial-h2">Try My Ghostwriting<br>Free for 7 Days.</h2>
         <p class="trial-text">
-          Experience my writing process before making any commitment. Receive professionally written LinkedIn content for one full week — completely free.
+          Experience the complete process before making any commitment. Receive professionally written LinkedIn content for one full week — completely free. No payment. No contracts. No hidden fees.
         </p>
-        <div class="trial-pillars">
-          <div class="trial-pillar">
-            <div class="trial-pillar-icon">🚫</div>
-            <div class="trial-pillar-text">No contracts.</div>
-          </div>
-          <div class="trial-pillar">
-            <div class="trial-pillar-icon">🛡️</div>
-            <div class="trial-pillar-text">No risk.</div>
-          </div>
-          <div class="trial-pillar">
-            <div class="trial-pillar-icon">✨</div>
-            <div class="trial-pillar-text">Just quality.</div>
-          </div>
-        </div>
-        <div class="trial-points">
-          <div class="tp">
-            <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            No credit card required
-          </div>
-          <div class="tp">
-            <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            No long-term commitment
-          </div>
-          <div class="tp">
-            <div class="tp-check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#0A66C2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            Real results, real writing
-          </div>
+        <div class="trial-guarantees">
+          <div class="tg-item"><span class="tg-icon">🚫</span> No payment required</div>
+          <div class="tg-item"><span class="tg-icon">📄</span> No contracts</div>
+          <div class="tg-item"><span class="tg-icon">🔒</span> No hidden fees</div>
+          <div class="tg-item"><span class="tg-icon">✨</span> Full process, real writing</div>
         </div>
         <a href="#contact" class="btn-primary" style="display:inline-flex">Claim Your Free Week →</a>
+        <div class="trial-note">Limited availability to maintain quality. Reach out to check current spots.</div>
       </div>
     </div>
   </div>
@@ -1512,7 +1390,7 @@
       Everything You Need to Win on LinkedIn.
     </h2>
     <p style="font-size:1rem;color:var(--gray);margin-top:16px;max-width:500px;line-height:1.7" class="reveal delay-2">
-      A full-stack personal brand operation, tailored to your voice and goals.
+      A complete personal brand operation, built around your voice and goals.
     </p>
 
     <div class="services-grid">
@@ -1538,7 +1416,7 @@
           <li>Content Planning</li>
           <li>Audience Positioning</li>
           <li>Content Pillars</li>
-          <li>Brand Voice</li>
+          <li>Brand Voice Definition</li>
         </ul>
       </div>
 
@@ -1563,7 +1441,7 @@
         <ul class="svc-list">
           <li>Weekly Planning</li>
           <li>Monthly Strategy</li>
-          <li>Content Ideas</li>
+          <li>Topic Ideation</li>
         </ul>
       </div>
 
@@ -1604,14 +1482,12 @@
     <div class="ba-grid">
       <div class="ba-card ba-before reveal delay-1">
         <div class="ba-label ba-label-before">✗ Before · Raw Idea</div>
-        <div class="ba-content">
-          <p class="ba-text">"I wanted to post something about how we struggled in the early days and how networking helped us get our first client. Not sure how to make it interesting."</p>
-          <div class="ba-tags">
-            <span class="ba-tag">Unclear</span>
-            <span class="ba-tag">No Hook</span>
-            <span class="ba-tag">No Structure</span>
-            <span class="ba-tag">Forgettable</span>
-          </div>
+        <p class="ba-text">"I wanted to post something about how we struggled in the early days and how networking helped us get our first client. Not sure how to make it interesting."</p>
+        <div class="ba-tags">
+          <span class="ba-tag">Unclear</span>
+          <span class="ba-tag">No Hook</span>
+          <span class="ba-tag">No Structure</span>
+          <span class="ba-tag">Forgettable</span>
         </div>
       </div>
       <div class="ba-arrow reveal delay-2">
@@ -1620,23 +1496,62 @@
       </div>
       <div class="ba-card ba-after reveal delay-3">
         <div class="ba-label ba-label-after">✓ After · Ghostwritten Post</div>
-        <div class="ba-content">
-          <p class="ba-text" style="color:var(--text)"><strong style="color:var(--white);font-size:0.95rem">We had $0 in revenue and our first "client" was my co-founder's uncle.</strong><br><br>But that awkward family dinner changed everything.<br><br>He asked one question that made us completely rethink our pitch, our pricing, and our entire go-to-market.<br><br>Here's the question — and what we did differently because of it 👇</p>
-          <div class="ba-tags">
-            <span class="ba-tag ba-tag-after">Strong Hook</span>
-            <span class="ba-tag ba-tag-after">Story-Led</span>
-            <span class="ba-tag ba-tag-after">Curiosity Gap</span>
-            <span class="ba-tag ba-tag-after">High Engagement</span>
-          </div>
+        <p class="ba-text" style="color:var(--text)"><strong style="color:var(--white);font-size:0.95rem">We had $0 in revenue and our first "client" was my co-founder's uncle.</strong><br><br>But that awkward family dinner changed everything.<br><br>He asked one question that made us completely rethink our pitch, our pricing, and our entire go-to-market.<br><br>Here's the question — and what we did differently because of it 👇</p>
+        <div class="ba-tags">
+          <span class="ba-tag ba-tag-after">Strong Hook</span>
+          <span class="ba-tag ba-tag-after">Story-Led</span>
+          <span class="ba-tag ba-tag-after">Curiosity Gap</span>
+          <span class="ba-tag ba-tag-after">High Engagement</span>
         </div>
       </div>
     </div>
-    <p style="text-align:center;font-size:0.78rem;color:var(--gray2);margin-top:28px">* Example for illustration purposes only · Demo Content</p>
+    <p style="text-align:center;font-size:0.78rem;color:var(--gray2);margin-top:28px">* Illustration only · Demo Content — not a real client post</p>
+  </div>
+</section>
+
+<!-- WHO I WORK WITH -->
+<section id="who" class="section-pad">
+  <div class="container">
+    <div class="section-label reveal">Fit</div>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);max-width:520px;line-height:1.2" class="reveal delay-1">
+      Who I Work With.
+    </h2>
+    <p style="font-size:1rem;color:var(--gray);margin-top:16px;max-width:500px;line-height:1.7" class="reveal delay-2">
+      I keep my client list intentionally small so I can give every person real attention.
+    </p>
+
+    <div class="who-grid">
+      <div class="reveal delay-2">
+        <div class="who-col-title">Great fit ✦</div>
+        <ul class="who-list">
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> Startup Founders</li>
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> Consultants & Coaches</li>
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> Agency Owners</li>
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> SaaS Founders</li>
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> Personal Brands</li>
+          <li class="who-item who-item-good"><span class="who-tick">✔</span> CEOs & Business Owners</li>
+        </ul>
+      </div>
+
+      <div class="reveal delay-3">
+        <div class="who-col-title">Probably not the right fit ✦</div>
+        <ul class="who-list">
+          <li class="who-item who-item-bad"><span class="who-cross">✖</span> People looking for AI-generated bulk content</li>
+          <li class="who-item who-item-bad"><span class="who-cross">✖</span> Businesses chasing vanity metrics only</li>
+          <li class="who-item who-item-bad"><span class="who-cross">✖</span> Anyone wanting copy-paste content frameworks</li>
+          <li class="who-item who-item-bad"><span class="who-cross">✖</span> Low-quality mass posting at high volume</li>
+        </ul>
+      </div>
+
+      <div class="who-belief reveal delay-4">
+        I believe thoughtful writing builds stronger brands than chasing trends. If you want content that compounds — not content that fills a calendar — we'll likely work well together.
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- WHY WORK WITH ME -->
-<section id="why" class="section-pad">
+<section id="why" class="section-pad" style="background:var(--black)">
   <div class="container">
     <div class="section-label reveal">Why Choose Me</div>
     <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);max-width:520px;line-height:1.2" class="reveal delay-1">
@@ -1645,44 +1560,44 @@
 
     <div class="why-grid">
       <div class="why-card reveal delay-1">
-        <div class="why-num">01</div>
-        <div class="why-title">Research-Driven Writing</div>
-        <div class="why-desc">Every post is grounded in what your audience actually cares about, not guesswork.</div>
+        <div class="why-icon">🔍</div>
+        <div class="why-title">Research Before Assumptions</div>
+        <div class="why-desc">Every post starts with research into your audience — what they struggle with, what they respond to, and what gaps exist in your niche.</div>
       </div>
       <div class="why-card reveal delay-2">
-        <div class="why-num">02</div>
-        <div class="why-title">Authentic Founder Voice</div>
-        <div class="why-desc">Your content sounds like you. Not like a template, not like AI, not like anyone else.</div>
+        <div class="why-icon">🎯</div>
+        <div class="why-title">Written in Your Voice</div>
+        <div class="why-desc">I write in your voice — not mine. Not a template, not AI, not generic founder-speak. Your audience should feel like they're reading you.</div>
       </div>
       <div class="why-card reveal delay-3">
-        <div class="why-num">03</div>
-        <div class="why-title">High-Converting Hooks</div>
-        <div class="why-desc">The first line is everything. I write hooks that stop the scroll and demand to be read.</div>
+        <div class="why-icon">⚡</div>
+        <div class="why-title">Hooks With Purpose</div>
+        <div class="why-desc">Every hook has a strategic reason to exist. It earns the reader's attention by making them feel something — curiosity, recognition, or surprise.</div>
       </div>
       <div class="why-card reveal delay-4">
-        <div class="why-num">04</div>
-        <div class="why-title">Storytelling That Builds Trust</div>
-        <div class="why-desc">Stories create emotional connections that logic alone never can. I craft yours carefully.</div>
+        <div class="why-icon">🏛️</div>
+        <div class="why-title">Content Built for Authority</div>
+        <div class="why-desc">Not vanity metrics. Every post is written to build your credibility with the right people — potential clients, partners, or hires.</div>
       </div>
       <div class="why-card reveal delay-1">
-        <div class="why-num">05</div>
+        <div class="why-icon">🧭</div>
         <div class="why-title">Strategy, Not Just Writing</div>
-        <div class="why-desc">Every post serves a purpose — authority, leads, followers, or deals. Nothing is random.</div>
+        <div class="why-desc">Every post serves a purpose. Whether it's positioning, lead generation, or thought leadership — nothing is random or filler.</div>
       </div>
       <div class="why-card reveal delay-2">
-        <div class="why-num">06</div>
-        <div class="why-title">Consistent Personal Branding</div>
-        <div class="why-desc">Your voice, positioning, and message stay perfectly consistent across every post.</div>
+        <div class="why-icon">🔄</div>
+        <div class="why-title">Consistent Positioning</div>
+        <div class="why-desc">Your voice, message, and brand positioning stay consistent across every post. That's how trust compounds over time.</div>
       </div>
       <div class="why-card reveal delay-3">
-        <div class="why-num">07</div>
-        <div class="why-title">Premium Quality</div>
-        <div class="why-desc">No filler, no fluff. Every word earns its place in the post.</div>
+        <div class="why-icon">✍️</div>
+        <div class="why-title">No Copy-Paste Frameworks</div>
+        <div class="why-desc">No recycled LinkedIn templates. No generic motivational posts. Every piece of content is written from scratch for you.</div>
       </div>
       <div class="why-card reveal delay-4">
-        <div class="why-num">08</div>
-        <div class="why-title">Fast Communication</div>
-        <div class="why-desc">Quick turnarounds, responsive revisions, and always keeping you in the loop.</div>
+        <div class="why-icon">💬</div>
+        <div class="why-title">Responsive & Reliable</div>
+        <div class="why-desc">Quick turnarounds, thoughtful revisions, and clear communication at every step. You always know where things stand.</div>
       </div>
     </div>
   </div>
@@ -1692,9 +1607,10 @@
 <section id="portfolio" class="section-pad">
   <div class="container">
     <div class="section-label reveal">Writing Samples</div>
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);margin-bottom:40px;line-height:1.2" class="reveal delay-1">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);margin-bottom:12px;line-height:1.2" class="reveal delay-1">
       Posts That Perform.
     </h2>
+    <p style="font-size:0.85rem;color:var(--gray2);margin-bottom:40px;font-style:italic" class="reveal delay-2">All samples below are demonstration content created for illustrative purposes.</p>
 
     <div class="portfolio-tabs reveal delay-2">
       <button class="ptab active">All</button>
@@ -1706,50 +1622,48 @@
 
     <div class="portfolio-grid">
       <!-- Post 1 -->
-      <div class="li-post reveal delay-1" data-category="startup-story">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-1" data-cat="startup-story">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av1">SF</div>
           <div>
-            <div class="li-name">Startup Founder</div>
-            <div class="li-role">Co-Founder & CEO · Series A</div>
+            <div class="li-name">SaaS Founder (Sample)</div>
+            <div class="li-role">Co-Founder & CEO · Illustrative</div>
             <div class="li-time">2d · 🌐</div>
           </div>
           <div class="li-badge">Startup Story</div>
         </div>
-        <div class="li-reactions">
-          <span class="li-emoji">👍</span><span class="li-emoji">❤️</span><span class="li-emoji">🔥</span>
-          <span class="li-count">3,241 reactions</span>
-        </div>
         <div class="li-content">
           <span class="hook">We almost shut down in month 4.</span>
-          Our runway was 6 weeks. Our lead investor had gone silent. One of our co-founders wanted to quit.<br><br>
-          I opened my laptop at 2AM and wrote down every reason we'd started this company.<br><br>
+          Our runway was 6 weeks. Our lead investor had gone silent. One co-founder wanted to quit.<br><br>
+          I opened my laptop at 2AM and wrote down every reason we started this company.<br><br>
           That list saved us.<br><br>
           Here's what I learned about keeping startups alive when everything feels impossible 👇
         </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Authority Building</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">SaaS Founders</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Storytelling</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Tension & Stakes</div></div>
+        </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 247</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 94</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
 
       <!-- Post 2 -->
-      <div class="li-post reveal delay-2" data-category="leadership">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-2" data-cat="leadership">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av2">CE</div>
           <div>
-            <div class="li-name">CEO & Leader</div>
-            <div class="li-role">Founder · Tech Startup</div>
+            <div class="li-name">CEO (Sample)</div>
+            <div class="li-role">Founder · Tech Company · Illustrative</div>
             <div class="li-time">1w · 🌐</div>
           </div>
           <div class="li-badge">Leadership</div>
-        </div>
-        <div class="li-reactions">
-          <span class="li-emoji">💡</span><span class="li-emoji">👏</span><span class="li-emoji">❤️</span>
-          <span class="li-count">5,108 reactions</span>
         </div>
         <div class="li-content">
           <span class="hook">The best hire I ever made had no degree, no startup experience, and failed 2 interviews.</span>
@@ -1758,134 +1672,147 @@
           He'd built a full deck. Unsolicited. On a Sunday night.<br><br>
           He became our Head of Growth in 14 months. This taught me everything about hiring for hunger over credentials.
         </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Thought Leadership</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">Startup Leaders</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Narrative</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Counterintuitive</div></div>
+        </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 389</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 132</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
 
       <!-- Post 3 -->
-      <div class="li-post reveal delay-3" data-category="marketing">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-3" data-cat="marketing">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av3">ME</div>
           <div>
-            <div class="li-name">Marketing Expert</div>
-            <div class="li-role">CMO · Growth Agency</div>
+            <div class="li-name">Marketing Consultant (Sample)</div>
+            <div class="li-role">CMO · Growth Agency · Illustrative</div>
             <div class="li-time">3d · 🌐</div>
           </div>
           <div class="li-badge">Marketing</div>
         </div>
-        <div class="li-reactions">
-          <span class="li-emoji">🔥</span><span class="li-emoji">👍</span><span class="li-emoji">💡</span>
-          <span class="li-count">2,876 reactions</span>
-        </div>
         <div class="li-content">
-          <span class="hook">We spent ₹40L on ads. Then we killed the budget entirely.</span>
-          Revenue went up 34% in the next 90 days.<br><br>
-          Here's exactly what replaced paid ads for us:<br><br>
+          <span class="hook">We paused our entire paid ads budget. Revenue went up 34% in 90 days.</span>
+          Here's exactly what replaced it:<br><br>
           → LinkedIn posts from our CEO (organic)<br>
           → 3 customer stories per month<br>
-          → Showing up consistently in comments<br><br>
+          → Consistent commenting in our niche<br><br>
           Attention is expensive. Trust is free. We chose trust.
+        </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Inbound Leads</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">B2B Marketers</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Insight + List</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Surprising Result</div></div>
         </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 201</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 78</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
 
       <!-- Post 4 -->
-      <div class="li-post reveal delay-1" data-category="personal-brand">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-1" data-cat="personal-brand">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av4">CO</div>
           <div>
-            <div class="li-name">Consultant</div>
-            <div class="li-role">Executive Coach · Personal Brand</div>
+            <div class="li-name">Consultant (Sample)</div>
+            <div class="li-role">Executive Coach · Personal Brand · Illustrative</div>
             <div class="li-time">5d · 🌐</div>
           </div>
           <div class="li-badge">Personal Brand</div>
         </div>
-        <div class="li-reactions">
-          <span class="li-emoji">❤️</span><span class="li-emoji">👏</span><span class="li-emoji">🙌</span>
-          <span class="li-count">4,420 reactions</span>
-        </div>
         <div class="li-content">
-          <span class="hook">I posted on LinkedIn for 6 months and got zero results. Here's what actually changed everything.</span>
+          <span class="hook">I posted on LinkedIn for 6 months and got zero results. Here's the one thing that changed everything.</span>
           I stopped writing for my ego and started writing for my audience's problems.<br><br>
-          One shift. One month. 14 inbound leads.<br><br>
-          Your personal brand isn't about you. It's about the transformation you create for others.<br><br>
-          When I understood that — LinkedIn became my #1 business development channel.
+          One shift. One month. The right people started reaching out.<br><br>
+          Your personal brand isn't about you — it's about the transformation you help others achieve.<br><br>
+          When I understood that, LinkedIn became my #1 business development channel.
+        </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Personal Brand</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">Consultants</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Confession + Insight</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Relatable Struggle</div></div>
         </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 318</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 101</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
 
       <!-- Post 5 -->
-      <div class="li-post reveal delay-2" data-category="startup-story">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-2" data-cat="startup-story">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av5">AO</div>
           <div>
-            <div class="li-name">Agency Owner</div>
-            <div class="li-role">CEO · B2B SaaS</div>
+            <div class="li-name">Agency Owner (Sample)</div>
+            <div class="li-role">CEO · B2B SaaS · Illustrative</div>
             <div class="li-time">4d · 🌐</div>
           </div>
           <div class="li-badge">Business Growth</div>
         </div>
-        <div class="li-reactions">
-          <span class="li-emoji">📈</span><span class="li-emoji">🔥</span><span class="li-emoji">👍</span>
-          <span class="li-count">1,987 reactions</span>
-        </div>
         <div class="li-content">
-          <span class="hook">From 0 to $1M ARR without a sales team. No cold calls. No outbound.</span>
+          <span class="hook">We built to $1M ARR without a sales team. No cold calls. No outbound.</span>
           Just LinkedIn.<br><br>
-          For 18 months, I posted 3 times a week about remote work, hiring, and team culture.<br><br>
-          Our inbound funnel became unstoppable. Because trust doesn't need a pitch deck.<br><br>
+          For 18 months, we posted 3 times a week about remote work, hiring, and team culture.<br><br>
+          Our inbound funnel became reliable. Because trust doesn't need a pitch deck.<br><br>
           The best sales strategy? Become the person everyone in your space already trusts.
+        </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Trust Building</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">B2B Founders</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Story + Lesson</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Bold Claim</div></div>
         </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 156</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 67</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
 
       <!-- Post 6 -->
-      <div class="li-post reveal delay-3" data-category="leadership">
-        <div class="sample-post-label">✦ Sample Post · Demo Content</div>
+      <div class="li-post reveal delay-3" data-cat="leadership">
+        <span class="li-demo-label">Portfolio Example · Demo Content</span>
         <div class="li-header">
           <div class="li-av av6">FO</div>
           <div>
-            <div class="li-name">Founder</div>
-            <div class="li-role">Product Lead · Startup</div>
+            <div class="li-name">Founder (Sample)</div>
+            <div class="li-role">Product Lead · Startup · Illustrative</div>
             <div class="li-time">6d · 🌐</div>
           </div>
           <div class="li-badge">Productivity</div>
         </div>
-        <div class="li-reactions">
-          <span class="li-emoji">⚡</span><span class="li-emoji">👍</span><span class="li-emoji">🙌</span>
-          <span class="li-count">3,654 reactions</span>
-        </div>
         <div class="li-content">
-          <span class="hook">I work 4 hours a day. My team thinks I work 10. Here's the system behind it.</span>
+          <span class="hook">I restructured my workday to 4 focused hours. My team's output went up, not down.</span>
           I'm not slacking off. I'm working deeply, not broadly.<br><br>
           → 1 priority per day (non-negotiable)<br>
           → No meetings before 12PM<br>
           → Async-first communication<br>
           → Zero notifications during deep work<br><br>
-          Output doubled. Stress halved. Team performance went up because their leader stopped being reactive.
+          When leaders stop being reactive, their teams get better at thinking independently.
+        </div>
+        <div class="post-meta">
+          <div class="pm-item"><div class="pm-label">Purpose</div><div class="pm-val">Thought Leadership</div></div>
+          <div class="pm-item"><div class="pm-label">Audience</div><div class="pm-val">Founders & Leaders</div></div>
+          <div class="pm-item"><div class="pm-label">Style</div><div class="pm-val">Insight + Framework</div></div>
+          <div class="pm-item"><div class="pm-label">Hook Type</div><div class="pm-val">Surprising Outcome</div></div>
         </div>
         <div class="li-footer">
           <div class="li-action"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment · 284</div>
-          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost · 119</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</div>
+          <div class="li-action"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Repost</div>
         </div>
       </div>
     </div>
@@ -1900,7 +1827,7 @@
       From Zero to Published in 5 Steps.
     </h2>
     <p style="font-size:1rem;color:var(--gray);text-align:center;margin-top:16px;max-width:500px;margin-left:auto;margin-right:auto" class="reveal delay-2">
-      A smooth, collaborative process designed so you barely have to lift a finger.
+      A smooth, collaborative process. You barely have to lift a finger.
     </p>
 
     <div class="process-timeline">
@@ -1909,49 +1836,40 @@
       <div class="process-step reveal delay-1">
         <div class="process-num">1</div>
         <div class="process-content">
-          <div class="process-step-num">Step 01</div>
           <div class="process-step-title">Discovery</div>
-          <div class="process-step-text">We start with a deep-dive conversation about your story, goals, audience, industry, and the message you want to put into the world. This is where we define your unique angle.</div>
+          <div class="process-step-text">We start with a focused conversation about your story, goals, audience, and the message you want to build around. This is where we define your positioning and unique angle on LinkedIn.</div>
         </div>
-        <div class="process-arrow">↓</div>
       </div>
 
       <div class="process-step reveal delay-2">
         <div class="process-num">2</div>
         <div class="process-content">
-          <div class="process-step-num">Step 02</div>
           <div class="process-step-title">Research</div>
-          <div class="process-step-text">I research your niche, study what's performing for top voices in your space, and identify content gaps we can own. Strategy precedes every word I write.</div>
+          <div class="process-step-text">I study your niche: what your audience cares about, what's resonating in your space, and where the content gaps are. Strategy comes before every word I write.</div>
         </div>
-        <div class="process-arrow">↓</div>
       </div>
 
       <div class="process-step reveal delay-3">
         <div class="process-num">3</div>
         <div class="process-content">
-          <div class="process-step-num">Step 03</div>
           <div class="process-step-title">Writing</div>
-          <div class="process-step-text">I craft each post in your authentic voice — with attention-grabbing hooks, compelling structure, and a clear purpose. Every post is written to perform, not just to fill a calendar.</div>
+          <div class="process-step-text">I craft each post in your authentic voice — with a purposeful hook, clear structure, and a reason to exist beyond filling a calendar. Every post is written to perform.</div>
         </div>
-        <div class="process-arrow">↓</div>
       </div>
 
       <div class="process-step reveal delay-4">
         <div class="process-num">4</div>
         <div class="process-content">
-          <div class="process-step-num">Step 04</div>
           <div class="process-step-title">Feedback & Revisions</div>
-          <div class="process-step-text">You review the content and share any feedback. I refine until you're completely satisfied. Your voice is the standard — we don't stop until it sounds exactly like you.</div>
+          <div class="process-step-text">You review the content and share feedback. I refine until it sounds exactly like you. Your voice is the standard — we don't stop until it's right.</div>
         </div>
-        <div class="process-arrow">↓</div>
       </div>
 
       <div class="process-step reveal delay-5" style="margin-bottom:0">
         <div class="process-num" style="background:var(--blue);color:var(--white)">5</div>
         <div class="process-content" style="border-color:rgba(10,102,194,0.3)">
-          <div class="process-step-num">Step 05</div>
           <div class="process-step-title">Ready to Publish ✦</div>
-          <div class="process-step-text">Your content is polished, scheduled, and ready to go live. You just hit post — or I can guide you on timing and hashtag strategy to maximize reach from day one.</div>
+          <div class="process-step-text">Your content is polished and ready. You hit post — or I can advise on timing and context to maximize visibility. The goal is always the right post at the right moment.</div>
         </div>
       </div>
     </div>
@@ -1968,83 +1886,53 @@
 
     <div class="faq-grid">
       <div class="faq-item reveal delay-1">
-        <div class="faq-q">
-          How does LinkedIn ghostwriting work?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          We start with a discovery call where I learn about you, your goals, and your industry. From there, I handle everything — research, writing, and revisions. You review the posts, give feedback, and I refine until they're perfect. Then you simply publish.
-        </div>
+        <div class="faq-q">How does LinkedIn ghostwriting work?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">We start with a discovery conversation where I learn about you, your goals, and your industry. From there, I handle research, writing, and revisions. You review the posts, share feedback, and I refine until they're right. Then you simply publish.</div>
       </div>
 
       <div class="faq-item reveal delay-2">
-        <div class="faq-q">
-          Will the content actually sound like me?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          Absolutely. Before I write a single word, I invest time understanding how you speak, what you value, and what makes your perspective unique. I study your existing content, past interviews, or conversations. The goal is zero gap between your real voice and what appears on LinkedIn.
-        </div>
+        <div class="faq-q">Will the content actually sound like me?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">That's the entire job. Before writing a single word, I invest time understanding how you speak, what you believe, and what makes your perspective unique. I study any existing content or conversations you share. The goal is no gap between your real voice and what appears on LinkedIn.</div>
       </div>
 
       <div class="faq-item reveal delay-3">
-        <div class="faq-q">
-          How many revisions are included?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          As many as it takes. I don't put a hard limit on revisions — I want you to be genuinely proud of every post that goes out under your name. In practice, most posts need 1-2 rounds of light tweaks before you love them.
-        </div>
+        <div class="faq-q">How many revisions are included?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">As many as it takes. I don't put a hard limit on revisions — I want you to be genuinely proud of every post. In practice, most posts need 1–2 rounds of light tweaks before they feel right.</div>
       </div>
 
       <div class="faq-item reveal delay-1">
-        <div class="faq-q">
-          Who owns the content?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          You do — 100%. Once a post is delivered and approved, it belongs entirely to you. I never republish, repurpose, or reference client content publicly without explicit permission.
-        </div>
+        <div class="faq-q">Who owns the content?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">You do — 100%. Once a post is delivered and approved, it belongs entirely to you. I never republish, repurpose, or reference client content publicly without explicit permission.</div>
       </div>
 
       <div class="faq-item reveal delay-2">
-        <div class="faq-q">
-          How does the free 1-week trial work?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          Simple: reach out, we jump on a quick intro call, and I write posts for you for one full week at no cost. You see exactly what the experience is like — the quality, the turnaround, the collaboration. No credit card, no contract, no pressure. You decide if you want to continue.
-        </div>
+        <div class="faq-q">How does the free 1-week trial work?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">Reach out, we jump on a quick intro call, and I write posts for you for one full week at no cost. No credit card, no contract, no pressure. You experience the full process — the quality, the turnaround, the collaboration — and decide from there.</div>
       </div>
 
       <div class="faq-item reveal delay-3">
-        <div class="faq-q">
-          How do we communicate and collaborate?
-          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">
-          Most clients prefer WhatsApp or email for daily communication, with a shared Google Doc or Notion board for content review. I adapt to whatever workflow fits your life. I'm responsive, async-friendly, and always meet deadlines.
-        </div>
+        <div class="faq-q">How do we communicate during the process?<svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">Most clients prefer WhatsApp or email for daily communication, with a shared Google Doc or Notion board for content review. I adapt to whatever workflow fits your life — responsive, async-friendly, and always on time.</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
-<section id="cta">
+<section id="cta" style="position:relative">
   <div class="cta-glow"></div>
-  <div class="container" style="position:relative;z-index:1">
+  <div class="container">
     <div class="cta-inner">
       <div class="section-label reveal" style="justify-content:center">Ready?</div>
       <h2 class="cta-h2 reveal delay-1">
-        Ready to Build Your<br><span style="color:var(--blue)">Personal Brand?</span>
+        Ready to Become the Voice<br><span style="color:var(--blue)">People Remember?</span>
       </h2>
       <p class="cta-text reveal delay-2">
-        Let's create LinkedIn content that attracts opportunities, builds authority, and grows your business — starting with a free week, risk-free.
+        Let's build LinkedIn content that attracts the right opportunities, compounds your authority, and sounds unmistakably like you — starting with a free week, no strings attached.
       </p>
       <div class="cta-buttons reveal delay-3">
-        <a href="#contact" class="btn-primary">Let's Connect <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="#portfolio" class="btn-secondary">See My Work</a>
+        <a href="#contact" class="btn-primary">Let's Connect <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#portfolio" class="btn-secondary">View Writing Samples</a>
       </div>
     </div>
   </div>
@@ -2058,9 +1946,14 @@
         <div class="section-label reveal">Get In Touch</div>
         <div class="contact-info">
           <h2 class="reveal delay-1">Let's Talk About Your Brand.</h2>
-          <p class="reveal delay-2">Whether you want to start with the free trial or just ask a question — I'm always happy to have a conversation. Fill in the form or reach me directly.</p>
+          <p class="reveal delay-2">Whether you want to start with the free trial or just ask a question — I'm happy to have a conversation. Fill in the form or reach me directly.</p>
         </div>
-        <div class="contact-links reveal delay-3">
+        <div class="contact-notes reveal delay-3">
+          <div class="contact-note"><span class="contact-note-dot">●</span> Usually replies within 12–24 hours</div>
+          <div class="contact-note"><span class="contact-note-dot">●</span> No spam, ever</div>
+          <div class="contact-note"><span class="contact-note-dot">●</span> Your information stays private</div>
+        </div>
+        <div class="contact-links reveal delay-4">
           <a href="mailto:vansh.ghondwal@gmail.com" class="contact-link">
             <div class="cl-icon cl-em">
               <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -2115,14 +2008,14 @@
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea placeholder="Tell me a bit about your goals and what you're looking for..." id="f-message"></textarea>
+            <textarea placeholder="Tell me about your goals and what you're looking for..." id="f-message"></textarea>
           </div>
-          <button class="btn-primary" id="formBtn" onclick="handleForm(event)" style="border:none;cursor:none;width:100%;justify-content:center;font-size:1rem;padding:16px">Let's Connect →</button>
+          <button class="btn-primary" id="formBtn" onclick="handleForm(event)" style="border:none;cursor:pointer;width:100%;justify-content:center;font-size:1rem;padding:16px">Let's Connect →</button>
           <div class="form-success" id="formSuccess">
-            ✓ Message sent! I'll be in touch within 24 hours.
+            ✓ Thanks! I'll personally review your message and get back to you within 24 hours.
           </div>
           <div id="formError" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:14px;text-align:center;color:#f87171;font-size:0.88rem;margin-top:8px;">
-            Something went wrong. Please email me at <a href="mailto:vansh.ghondwal@gmail.com" style="color:#f87171">vansh.ghondwal@gmail.com</a>
+            Something went wrong. Please email me directly at <a href="mailto:vansh.ghondwal@gmail.com" style="color:#f87171">vansh.ghondwal@gmail.com</a>
           </div>
         </div>
       </div>
@@ -2136,18 +2029,22 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#home" class="footer-logo">Vansh<span>.</span></a>
-        <p class="footer-tagline">Helping founders build authority and attract opportunities through strategic LinkedIn Ghostwriting.</p>
+        <p class="footer-tagline">Helping founders build authority and attract opportunities through strategic LinkedIn ghostwriting.</p>
         <div class="footer-meta">
           <div class="footer-meta-item">
-            <span class="footer-meta-label">Response Time</span>
-            <span class="footer-meta-val">Within 24 Hours</span>
+            <span class="footer-meta-label">Availability</span>
+            <span class="footer-meta-val">Available Worldwide</span>
           </div>
           <div class="footer-meta-item">
-            <span class="footer-meta-label">Location</span>
-            <span class="footer-meta-val">India · Working Worldwide</span>
+            <span class="footer-meta-label">Industries</span>
+            <span class="footer-meta-val">Working with founders across different industries</span>
+          </div>
+          <div class="footer-meta-item">
+            <span class="footer-meta-label">Average Response</span>
+            <span class="footer-meta-val">12–24 hours</span>
           </div>
         </div>
-        <div class="footer-socials" style="margin-top:20px">
+        <div class="footer-socials">
           <a href="https://www.linkedin.com/in/vanshghondwal/" target="_blank" class="footer-social" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
@@ -2186,7 +2083,7 @@
     </div>
 
     <div class="footer-disclaimer">
-      All writing samples shown are demo content created for illustrative purposes. No fake client names, fake companies, or fabricated testimonials.
+      All writing samples shown are demonstration content created for illustrative purposes. No fabricated client names, fake companies, or made-up testimonials.
     </div>
 
     <div class="footer-bottom">
@@ -2240,7 +2137,7 @@
   }
   animateRing();
 
-  document.querySelectorAll('a, button, .svc-card, .why-card, .li-post, .faq-item, .process-step').forEach(el => {
+  document.querySelectorAll('a, button, .svc-card, .why-card, .li-post, .faq-item, .process-step, .who-item').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.width = '16px';
       cursor.style.height = '16px';
@@ -2260,38 +2157,14 @@
   // ─── Mobile Menu ───
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-  });
+  hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('open'); });
   function closeMobile() { mobileMenu.classList.remove('open'); }
 
   // ─── Scroll Reveal ───
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); }
-    });
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.12 });
-
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
-
-  // ─── Counter Animation ───
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting && !e.target.dataset.done) {
-        e.target.dataset.done = true;
-        const target = parseInt(e.target.dataset.target);
-        const duration = 1800;
-        const step = target / (duration / 16);
-        let current = 0;
-        const timer = setInterval(() => {
-          current = Math.min(current + step, target);
-          e.target.textContent = Math.floor(current);
-          if (current >= target) clearInterval(timer);
-        }, 16);
-      }
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
   // ─── FAQ Accordion ───
   document.querySelectorAll('.faq-item').forEach(item => {
@@ -2302,8 +2175,7 @@
     });
   });
 
-  // ─── Portfolio Tabs with filtering ───
-  // Map tab labels to data-category values on the .li-post elements
+  // ─── Portfolio Tabs ───
   const tabMap = {
     'All': 'all',
     'Startup Story': 'startup-story',
@@ -2311,27 +2183,13 @@
     'Marketing': 'marketing',
     'Personal Brand': 'personal-brand',
   };
-  // Assign data-category to each post from its badge text
-  document.querySelectorAll('.li-post').forEach(post => {
-    const badge = post.querySelector('.li-badge');
-    if (!badge) return;
-    const text = badge.textContent.trim();
-    const key = Object.keys(tabMap).find(k => k !== 'All' && text.toLowerCase().includes(k.toLowerCase()));
-    if (key) post.dataset.category = tabMap[key];
-    else post.dataset.category = 'other';
-  });
-
   document.querySelectorAll('.ptab').forEach(tab => {
     tab.addEventListener('click', function() {
       document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
       this.classList.add('active');
       const filter = tabMap[this.textContent.trim()] || 'all';
       document.querySelectorAll('.li-post').forEach(post => {
-        if (filter === 'all' || post.dataset.category === filter) {
-          post.style.display = '';
-        } else {
-          post.style.display = 'none';
-        }
+        post.style.display = (filter === 'all' || post.dataset.cat === filter) ? '' : 'none';
       });
     });
   });
@@ -2362,14 +2220,10 @@
   // ─── Navbar Scroll ───
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-      nav.style.background = 'rgba(0,0,0,0.85)';
-    } else {
-      nav.style.background = 'rgba(0,0,0,0.6)';
-    }
+    nav.style.background = window.scrollY > 50 ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)';
   });
 
-  // ─── Contact Form via FormSubmit ───
+  // ─── Contact Form ───
   async function handleForm(e) {
     e.preventDefault();
     const name = document.getElementById('f-name').value.trim();
@@ -2378,7 +2232,6 @@
     const linkedin = document.getElementById('f-linkedin').value.trim();
     const message = document.getElementById('f-message').value.trim();
 
-    // Validation
     let valid = true;
     [['f-name', name], ['f-email', email], ['f-message', message]].forEach(([id, val]) => {
       const el = document.getElementById(id);
@@ -2406,20 +2259,17 @@
       if (res.ok) {
         btn.style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
-      } else {
-        throw new Error('Server error');
-      }
+      } else { throw new Error('Server error'); }
     } catch {
-      btn.textContent = 'Let\'s Connect →';
+      btn.textContent = "Let's Connect →";
       btn.disabled = false;
       document.getElementById('formError').style.display = 'block';
     }
   }
 
-  // ─── Smooth scroll (all anchor links including View Portfolio) ───
+  // ─── Smooth Scroll ───
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(a => {
-      // remove any old listeners by cloning
       const clone = a.cloneNode(true);
       a.parentNode.replaceChild(clone, a);
     });
@@ -2438,7 +2288,6 @@
       });
     });
   }
-  // Run immediately and again after loader hides (covers dynamically-added elements)
   initSmoothScroll();
   document.addEventListener('DOMContentLoaded', initSmoothScroll);
 </script>
