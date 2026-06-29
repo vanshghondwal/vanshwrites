@@ -1068,15 +1068,19 @@
     /* ── Nav ── */
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
-    nav { padding: 0 20px; height: 60px; }
+    nav { padding: 0 16px; height: 52px; }
+    .nav-logo { font-size: 1.15rem; }
+    .nav-hamburger span { width: 18px; height: 1.5px; }
+    .mobile-menu { top: 52px; }
+    .mobile-menu a { font-size: 0.9rem; padding: 12px 0; }
 
     /* ── Layout ── */
     .section-pad { padding: 56px 0; }
     .container { padding: 0 20px; }
 
     /* ── Hero ── */
-    #home { padding-top: 60px; min-height: 100svh; display: flex; align-items: flex-start; }
-    .hero-grid { padding: 36px 0 48px; gap: 0; grid-template-columns: 1fr; }
+    #home { padding-top: 52px; min-height: 100svh; display: flex; align-items: flex-start; }
+    .hero-grid { padding: 32px 0 44px; gap: 0; grid-template-columns: 1fr; }
     .hero-visual { display: none; }
 
     .hero-badge {
@@ -1225,9 +1229,10 @@
 
   @media (max-width: 480px) {
     .container { padding: 0 16px; }
-    nav { padding: 0 16px; height: 58px; }
+    nav { padding: 0 14px; height: 50px; }
+    .nav-logo { font-size: 1.1rem; }
     .section-pad { padding: 48px 0; }
-    #home { padding-top: 58px; }
+    #home { padding-top: 50px; }
 
     .hero-badge { font-size: 0.62rem; padding: 4px 10px; }
     .hero-h1 { font-size: 1.85rem; line-height: 1.13; }
@@ -1257,7 +1262,7 @@
 
     footer { padding: 32px 0 20px; }
     .footer-logo { font-size: 1.2rem; }
-    .mobile-menu { top: 58px; }
+    .mobile-menu { top: 50px; }
 
     .process-num { width: 36px; height: 36px; font-size: 0.72rem; }
     .process-line { left: 18px; }
